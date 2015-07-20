@@ -3,7 +3,7 @@
 #### Functional  Programming  in Python by David Mertz - O'Reilly Free Book
 
 
-    ### ENCAPSULATION
+## ENCAPSULATION
     
     # configure the data to start with 
     collection = get_initial_state() 
@@ -43,7 +43,7 @@
         process(thing) 
 
 
-    ### COMPREHENSIONS
+## COMPREHENSIONS
     
     #if our original code was:
     collection = list() 
@@ -58,7 +58,7 @@
     collection = [d if condition(d) else modify(d) for d in data_set] 
 
 
-    ### GENERATORS
+## GENERATORS
     
     # they are also lazy. That is to say that they are merely a description of “how to get the data” that is 
     # not realized until one explicitly asks for it, either by calling .next() 
@@ -96,7 +96,7 @@
     
 
 
-    ### DICTS AND SETS
+## DICTS AND SETS
     
     # dictionaries and sets can be created “all at once” rather than by repeatedly calling .update() or .add() in a loop. For example:
     {i:chr(65+i) for i in range(6)}
@@ -105,7 +105,7 @@
     {chr(65+i) for i in range(6)}
 
 
-    ### RECURSION
+## RECURSION
     
     # Python lacks an internal feature called tail call elimination that makes deep recursion computationally efficient 
     # in some languages. Let us find a trivial example where recursion is really just a kind of iteration:
@@ -144,7 +144,7 @@
     # It is not a good idea in Python—most of the time—to use recursion merely for “iteration by other means.”
 
 
-    ### ALTERNATIVES TO FOR LOOPs (when it is a good idea)
+## ALTERNATIVES TO FOR LOOPs (when it is a good idea)
     
     ## using map()
     
@@ -172,7 +172,7 @@
     _ = do_all_funcs([hello, bye], ['David','Jane'], ['Mertz','Doe']) 
 
 
-    ### CALLABLES
+## CALLABLES
     
     #  Python actually gives us several different ways to create functions, or at least something very function-like (i.e., that can be called). They are: 
     # • Regular functions created with def and given a name at definition time 
@@ -193,7 +193,7 @@
     # The only real difference is in .__qualname__ attribute
 
 
-    ### CLOSURES and CLASSES
+## CLOSURES and CLASSES
     
     # Let us construct a toy example that shows this, something just past a “hello world” of the different styles:
     # A class that creates callable adder instances 
@@ -227,7 +227,7 @@
     # state dependent
 
 
-    ### METHODS OF CLASSES
+## METHODS OF CLASSES
     
     # accessors are callables with a limited use (from a functional programming perspective) in that they take no 
     # arguments as getters, and return no value as setters:
@@ -252,7 +252,7 @@
     
 
 
-    ### STATIC METHODS
+## STATIC METHODS
     
     # One use of classes and their methods that is more closely aligned with a functional style of programming is to use 
     # them simply as namespaces to hold a variety of related functions:
@@ -271,7 +271,7 @@
             return b / RightTriangle.hypotenuse(a, b)
 
 
-    ### GENERATOR FUNCTIONS
+## GENERATOR FUNCTIONS
     
     # A special sort of function in Python is one that contains a yield statement, which turns it into a generator. 
     # What is returned from calling such a function is not a regular value, but rather an iterator that produces a 
@@ -298,7 +298,7 @@
     7 11 13 17 19 23 29 31 37 41 
 
 
-    ### MULTIPLE DISPATCHING
+## MULTIPLE DISPATCHING
     
     # A very interesting approach to programming multiple paths of execution is a technique called “multiple dispatch” 
     # or sometimes “multimethods.” The idea here is to declare multiple signatures for a single function and call the 

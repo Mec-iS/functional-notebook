@@ -496,9 +496,13 @@
     # simpler: filter(isOdd, range(10))
 
 
-    ## DECORATORS
+## DECORATORS
     
-    # probably the most common use of higher-order functions in Python is as decorators. 
+    # probably the most common use of higher-order functions in Python is as decorators. Decorators in Python are possible 
+    # because:
+    # - encapsulation: define a function inside a function, the contained function can access but not assign the container function
+    # - functions can be passed as a parameter (functions are first-class objects)
+    # - functions can return functions
     
     # Taken from: http://thecodeship.com
     

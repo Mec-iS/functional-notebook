@@ -1,8 +1,6 @@
-
-
-    #### FUNCTIONAL CONCEPTS FOR PYTHON
-    # Taken from:
-    # Functional  Programming  in Python by David Mertz - O'Reilly
+# FUNCTIONAL CONCEPTS FOR PYTHON
+#### Taken from:
+#### Functional  Programming  in Python by David Mertz - O'Reilly Free Book
 
 
     ### ENCAPSULATION
